@@ -10,33 +10,94 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="header-section">
+  <img alt="bg" class="main-bg" src="./assets/america.jpg">
+  <div class="mask"></div>
+  <div class="header-content">
+    <header id="header">
+      <div class="inner">
+        <img alt="logo" class="logo" id="header-img" src="./assets/logo.png">
 
-<header id="header">
-  <img alt="logo" class="logo" id="header-img" src="#">
+        <nav id="nav-bar">
+          <a class="nav-link" href="#cta">Contact</a>
+          <a class="nav-link" href="#product">Product</a>
+          <a class="nav-link" href="#about">About</a>
+        </nav>
+      </div>
+    </header>
 
-  <nav id="nav-bar">
-    <a class="nav-link" href="#product">Product</a>
-    <a class="nav-link" href="#about">About</a>
-    <a class="nav-link" href="#contact">Contact</a>
-  </nav>
-</header>
+    <section id="cta">
+      <div class="inner">
+        <h1>Join us !</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto cupiditate
+           deleniti dignissimos distinctio ducimus eum laudantium.</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label for="email">
+            <input id="email" name="email" placeholder="Your email address" required type="email">
+          </label>
+          <label for="submit">
+            <input id="submit" type="submit" value="Join !"/>
+          </label>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
 
 <main>
+
   <section id="product">
-    <video id="video" src=""></video>
+    <div class="inner">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen height="315"
+              id="video" src="https://www.youtube.com/embed/H_D-y21_82c"
+              title="YouTube video player"
+              width="560"></iframe>
+    </div>
   </section>
 
   <section id="about">
-  </section>
-  <section id="contact">
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <label for="email">
-        Email
-        <input id="email" name="email" placeholder="Your email address" required type="email">
-      </label>
+    <div class="inner">
 
-      <button id="submit" type="submit">Send</button>
-    </form>
+      <h1 class="section-title">Pricing</h1>
+
+      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                              adipisci aliquam
+                              architecto blanditiis. </p>
+      <div class="price-card-container">
+        <div class="price-card">
+          <h2>BASIC</h2>
+          <p class="price">200</p>
+          <p class="cta-btn"><a href="#cta">buy</a></p>
+          <div class="details-container">
+            <p class="detail">lorem ipsum </p>
+            <p class="detail">lorem ipsum dolor</p>
+            <p class="detail">lorem</p>
+          </div>
+        </div>
+        <div class="price-card">
+          <h2>PREMIUN</h2>
+          <p class="price">400</p>
+          <p class="cta-btn"><a href="#cta">buy</a></p>
+          <div class="details-container">
+            <p class="detail">lorem ipsum </p>
+            <p class="detail">lorem ipsum dolor</p>
+            <p class="detail">lorem</p>
+          </div>
+        </div>
+        <div class="price-card">
+          <h2>PRO</h2>
+          <p class="price">600</p>
+          <p class="cta-btn"><a href="#cta">buy</a></p>
+          <div class="details-container">
+            <p class="detail">lorem ipsum </p>
+            <p class="detail">lorem ipsum dolor</p>
+            <p class="detail">lorem</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 </main>
